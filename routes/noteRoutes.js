@@ -1,7 +1,10 @@
 // below we import the necessary Node.js modules, including path for working with file paths, fs for reading/writing files, and uniqid for generating unique ids
 const path = require('path'); 
 const fs = require('fs'); 
-var uniqid = require('uniqid'); 
+const uuid = require('..helpers/uuid');
+
+// export module
+module.exports = (app) => {
 
     // below we define the GET route for "/api/notes" by constructing path to JSON file containing notes data, reading it and parsing into an onject, and responding with the JSON data from the file.
     app.get('/api/notes', (req, res) => {
@@ -22,7 +25,7 @@ var uniqid = require('uniqid');
         const userNote = {
             title: req.body.title,
             text: req.body.text,
-            id: uniqid(), // generates unique ID for new note
+            id: uuid(), // generates unique ID for new note
         };
 
         // adds new note to array of notes
@@ -52,3 +55,4 @@ var uniqid = require('uniqid');
         // responds to DELETE request with the updated array
         res.json(deleteNotes);
     });
+};
