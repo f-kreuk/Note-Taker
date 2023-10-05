@@ -1,28 +1,24 @@
+// Adding my dependency
 const express = require('express');
-const path = require('path');
-const api = require('./routes/index.js');
 
-const PORT = process.env.PORT || 3001;
-
+// using express
 const app = express();
 
-// Middleware for parsing JSON and urlencoded form data
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use('/api', api);
+// creating env variable port
+const PORT = process.env.PORT || 3001;
 
+// creates '/' route for every file in public folder
 app.use(express.static('public'));
 
-// GET Route for homepage
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
+// Middleware for parsing JSON and urlencoded form data
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Wildcard route to direct users to a 404 page
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/pages/404.html'))
-);
+// routes for files
+require('./routes/index')(app);
+require('./routes/notes')(app);
 
+// starts the server
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
 );
