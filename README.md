@@ -22,13 +22,15 @@ To utilize the application, open the application in your browser and select "Get
 
 ![Home Page](/public/assets/images/Note%20Taker%20Home%20Page.JPG)
 
+
 Once on the notes page, simply start adding notes by providing a note title and note body with text. As you are adding the body text, you will see an option to clear the form or save the note. Select either to complete those actions. 
 
-![Notes Page](/public/assets/images/Note%20Taker%20Notes%20Page%202.JPG)
+![Notes Page](/public/assets/images/Note%20Taker%20Notes%20Page%201.JPG)
+
 
 See the note body for any note title by selecting the of-interest note from the left side of the page. You can also delete any note by selecting the red trash icon next to each respective note.
 
-![Notes Page](/public/assets/images/Note%20Taker%20Notes%20Page%201.JPG)
+![Notes Page](/public/assets/images/Note%20Taker%20Notes%20Page%202.JPG)
  
  ## License
  
