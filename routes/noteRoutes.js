@@ -1,7 +1,7 @@
 // below we import the necessary Node.js modules, including path for working with file paths, fs for reading/writing files, and uniqid for generating unique ids
 const path = require('path'); 
 const fs = require('fs'); 
-const uuid = require('..helpers/uuid');
+const uuid = require('../helpers/uuid');
 
 // export module
 module.exports = (app) => {
