@@ -4,7 +4,7 @@
 
  ## Description
  
-The Note-Taker application writes and saves notes utilizing an Express.js back-end that will save and retrieve note data from a JSON file.
+The Note-Taker application writes and saves notes utilizing an Express.js back-end that will save and retrieve note data from a JSON file. The application is deployed at the following ![Heroku Site](https://limitless-wildwood-41425-18aaa46d498f.herokuapp.com/).
  
  ## Table of Contents
  
