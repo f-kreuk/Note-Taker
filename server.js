@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // routes for files
-require('./routes/index')(app);
-require('./routes/notes')(app);
+require('./routes/noteRoutes')(app);
+require('./routes/homeRoutes')(app);
 
 // starts the server
 app.listen(PORT, () =>
