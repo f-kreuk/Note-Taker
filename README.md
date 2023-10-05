@@ -1,5 +1,7 @@
 # Note-Taker
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
  ## Description
  
 The Note-Taker application writes and saves notes utilizing an Express.js back-end that will save and retrieve note data from a JSON file.
@@ -34,9 +36,9 @@ See the note body for any note title by selecting the of-interest note from the 
  
  ## License
  
- Licensed under Apache license 2.0 (the 'License'); you may not use this file except in compliance with the License. 
+ Licensed under MIT (the 'License'); you may not use this file except in compliance with the License. 
  
- You may obtain a copy of the License by navigating to https://opensource.org/licenses/Apache-2.0.
+ You may obtain a copy of the License by navigating to .
  
  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License."
  
